@@ -14,4 +14,5 @@ An Android application aimed at empowering women by providing safety features, l
 ## Screenshots
 
 
+<img width="1920" height="1080" alt="Women Safety App" src="https://github.com/user-attachments/assets/9df85336-b7f4-413c-b910-e2a861874ab1" />
 
