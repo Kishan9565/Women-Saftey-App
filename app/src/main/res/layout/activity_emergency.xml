@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_bg"
+    tools:context=".ui.AddMembers">
+
+    <!-- Heading in center -->
+    <TextView
+        android:id="@+id/membersHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Emergency Numbers"
+        android:textAlignment="center"
+        android:textColor="#073646"
+        android:textSize="24sp"/>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvEmergency"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/membersHeading"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="100dp"
+        android:padding="@dimen/_16sdp"/>
+
+    <!-- Floating Action Button -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_8sdp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add"
+            app:tint="@color/white"
+            android:backgroundTint="#073646" />
+
+        <TextView
+            android:id="@+id/addEmergencyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Add Emergency Number"
+            android:textColor="#073646"
+            android:textSize="16sp"
+            android:fontFamily="@font/zonapro_bold"/>
+    </LinearLayout>
+
+</RelativeLayout>
